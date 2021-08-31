@@ -1,7 +1,67 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="utf-8">
-    <title>Fan Club</title>
-  </head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="/css/style.css" type="text/css" rel="stylesheet">
+    <script src="/js/index.js"></script>
+    
+    <nav id="navbar" class="flex">
+      <div class="flex-1 logo"><img src="/images/kbelogo3.png"></div>
+      <div class="flex-2 flex-element push"><a href="/fan/fanClub.html">Fan Club</a></div>
+      <div class="flex-3 flex-element"><a href="/fan/fanClub.html">Shop</a></div>
+      <div class="flex-4 flex-element"><a href="#categories">About</a></div>
+      <div class="flex-5 flex-element"><a href="#contact">News</a></div> 
+      <div class="flex-6 flex-element"><a href="#contact">Gallery <i class="arrow down"></i></button></a>     
+          <div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn"><a href="#home">TMNT Media</a>
+              <a href="#about">Early Turtles</a>  
+      </div> 
+      </div>   
+    </nav>
+
+</head>
+  <body>
+    <div class="jumbotron jumbotron-fluid">
+      <div class="container">
+        <div class="display-4">Kevin Eastman Fan Club</div>
+        
+    </div>
+    </div>
+    <div class="fanClubTitle">Join the Fan Club</div>
+    <div class="row">
+      <div class="col-sm-6">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">6 Month Membership</h5>
+            <p class="card-text">$30</p>
+            <a href="#" class="btn btn-primary">Buy</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">1 Year Membership</h5>
+            <p class="card-text">$50</p>
+            <a href="#" class="btn btn-primary">Buy</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <h3>Copyright 2021<h3>
+      <div class="payment"></div>
+      <li class="pay"><img src="/images/206684_visa_method_card_payment_icon.png" alt="visa"></li>
+      <li class="pay"><img src="/images/206680_master_method_card_payment_icon.png" alt="mastercard"></li>
+      <li class="pay"><img src="/images/206682_american_express_method_card_payment_icon.png" alt="amex"></li>
+      <li class="pay"><img src="/images/362294_business_buy_card_cash_checkout_icon.png" alt="discover"></li>
+      <li class="pay"><img src="/images/2629954_card_cash_checkout_credit_paypal_icon.png" alt="paypal"></li>
+      </div>
+      <div class="social">
+      <a href="#" class="facebook"><img src="/images/facebook.png" alt="facebook"></a>
+      <a href="#" class="twitter"><img src="/images/twitter.png" alt="twitter"></a>
+      <a href="#" class="email"><img src="/images/mail.png" alt="mail"></a>
+      </div>
+  </footer>
+  </body>
 </html>

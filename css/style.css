@@ -1,45 +1,71 @@
-.header {
-    background-color: #4c544c;
-    background-repeat: no-repeat;
-    font-family: 'lato';
-    z-index: 1000  ;
-}
-.logo {
-    background-color: solid #4c544c;
-    display: flex;
-    justify-content: left;
-}
-.headerRight {
-    z-index: 1000;
-}
-.nav-item {
-  display: inline-block;
-  font-size: 20px;
-  padding: 20px;
-  padding-left: 100px;
-  z-index: 1000;
-}
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    text-align: center;
-    z-index: 1000;
-  }
-  li a {
-    display: block;
-    padding: 8px;
-    background-color: #4c544c;
-    text-decoration: none;
+
+.push {
+  margin-left: auto; }
+nav {
     color: white;
-    font-size: x-large;
-    font-family: 'lato';
-    z-index:1000;
+}
+  .flex {
+    display: flex;
+    flex-wrap: wrap; }
+
+
+    #navbar {
+      border-bottom: solid 1px black; 
+      font-family: 'lato';
+      background-color: #212521;
+      height: auto;
+      padding: 45px;
   }
-  li a:hover {
-    color: lightgreen;
-  }
+       #navbar .dropdown {
+        position: absolute;
+        z-index: 3;
+        display: none;
+        border-top: none;
+        padding: 1rem 2rem;
+        background-color: rgba(0, 0, 0, 0.801);
+        left: -1.8rem;
+        top: 3.7rem; }
+        #navbar .dropdown p {
+          color: white; }
+          #navbar .dropdown p:hover {
+            border-bottom: 1px solid white; }
+      #navbar .flex-element:hover .dropdown {
+        display: block;
+        z-index: 2; }
+      #navbar .flex-1 {
+        width: 3rem;
+        height: 3rem;
+        margin-left: .5rem;
+        align-self: center;
+        padding: .3rem;
+        font-size: 2rem; }
+      #navbar .flex-2 {
+        padding: .3rem;
+        font-size: 2rem;
+        margin-right: 5rem; }
+        #navbar .flex-2 a {
+          text-decoration: none;
+          }
+      #navbar .flex-element {
+        padding: .3rem;
+        font-size: 2rem;
+        margin-right: 5rem;
+        transition: all .2s ease-out;
+        position: relative; }
+        #navbar .flex-element a {
+          text-decoration: none;
+          color: white; 
+          font-size: x-large;}
+          #navbar .flex-element a:hover {
+            color: lightgreen;
+          }
+        #navbar .flex-element:first-child {
+          margin-right: 0; }
+        #navbar .flex-element:hover {
+          transform: translateY(1.5px); }
+        #navbar .flex-element:active {
+          transform: translateY(-1.5px); }
+          
   .dropbtn {
     background-color: #4c544c;
     color: white;
@@ -65,7 +91,7 @@ ul {
   .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #f1f1f1;
+    background-color: ;
     min-width: 160px;
     overflow: auto;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
@@ -75,14 +101,14 @@ ul {
   
   .dropdown-content a {
     color: black;
-    padding: 12px 16px;
+    padding: 
     text-decoration: none;
     display: block;
     position: relative;
     z-index: 1000;
   }
   
-  .dropdown a:hover {background-color: #ddd;}
+  .dropdown a:hover {background-color:}
   
   .show {display: block;}
   
@@ -90,28 +116,27 @@ ul {
     position: relative;
     z-index: 1000;
   }
-  
-.heroImage {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(/images/DzFC8P6VAAE3d-G.jpeg);
-  height: 700px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-  z-index: -100;
-  
-}
-.heroText {
-    text-align: center;
+  .centered {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    font-size: 50px;
+    font-family: 'Lato';
     color: white;
-    font-family: 'lato';
-    width: fit-content;
-    z-index: -1;   
+  }
+
+.heroImage {
+  position: relative;
+  text-align: center;
+  z-index: -1;
+  height: 50vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://i1.wp.com/www.teenagemutantninjaturtles.com/wp-content/uploads/2016/12/tmntuniverse1.jpg?fit=1263%2C560&ssl=1");
+  background-repeat: no-repeat;
+  background-size: cover;  
 }
+
+
 #club {
     background-color: #4c544c;
     font-family: lato;
@@ -128,14 +153,6 @@ ul {
     text-align: center;
 }
 
-.navbar-brand {
-    max-width:100%;
-    height:auto;
-}
-.navbar-nav {
-    margin-left: auto;
-    margin-right: auto;
-    }
 h1 {
     font-size: 100px;
     color: white;
@@ -188,3 +205,41 @@ footer {
       position: relative;
       z-index: -1;
   }
+  .jumbotron {
+    color: white;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://www.syfy.com/sites/syfy/files/styles/1140x640_hero/public/2017/10/001.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50vh;
+  }
+  .display-4 {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 50px;
+    font-family: 'Lato';
+    color: white;
+    font-weight: bold;
+  }
+  .row {
+    padding: 50px;
+  }
+  .card-title {
+    color: black;
+    font-family: 'Lato';
+  }
+  .card-text {
+    color: black;
+    font-family: 'Lato';
+  }
+  body {
+    background-color:#4c544c;
+  }
+.fanClubTitle {
+  text-align: center;
+  color: white;
+  font-size: xx-large;
+  font-family: 'Lato';
+}
